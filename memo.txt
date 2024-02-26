@@ -2,6 +2,23 @@ quelques mémos de commandes sur git:
 
 git init : pour initialiser git dans un projet(repertoire)
 git status: pour voir l'état de mon projet
-git commit :pour faire un
+git commit :pour faire un commit c a d envoyer une modification dans une branche secondaire
 git help: commande d'aide git
 git config: pour configurer un projet git: git config --global  user.emeil "email-github" ;git config --global  user.name "identifiant-github" ;
+git config --liste: liste des configurations actuelles et lerurs états
+git add nom_du_fichier.extention : permet de stage ou ajouter un fichier à un paquet afin de préparer un commit
+git rm --cached  nom_du_fichier.extention : pour retirer le fichier du comit
+git commit -m "message" : pour mettre un commentaire ou message au commit 
+git commit -a : permet d'ajouter automatiquement au commit tous les fichiers qui ne le sont pas
+
+on peut aussi utiliser des regex
+git add "*.txt" :rajoute tous les fichiers text
+git add "bonjour/* :rajoute tous les fichiers présents dans le dossier bonjour
+git add --all: pour ajouter tous les fichiers du projet
+.gitignore est un fichier où 'on liste les fichiers qu'on veut ignorer
+
+git log : liste les derniers commits qui ont été fait... avec des paramètres comme -n pour préciser le nombre de commits, ou --oneline ; -p pour préciser les fichiers ou dossiers que l'on souhate observer*
+git diff nous montre tous les fichiers modifiés et nous montre les dernières modifs
+
+
+
