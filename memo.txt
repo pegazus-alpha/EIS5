@@ -1,0 +1,7 @@
+quelques mémos de commandes sur git:
+
+git init : pour initialiser git dans un projet(repertoire)
+git status: pour voir l'état de mon projet
+git commit :pour faire un
+git help: commande d'aide git
+git config: pour configurer un projet git: git config --global  user.emeil "email-github" ;git config --global  user.name "identifiant-github" ;
