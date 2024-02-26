@@ -20,5 +20,6 @@ git add --all: pour ajouter tous les fichiers du projet
 git log : liste les derniers commits qui ont été fait... avec des paramètres comme -n pour préciser le nombre de commits, ou --oneline ; -p pour préciser les fichiers ou dossiers que l'on souhate observer*
 git diff nous montre tous les fichiers modifiés et nous montre les dernières modifs
 
+***************************
 
 
