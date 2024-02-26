@@ -19,7 +19,8 @@ git add --all: pour ajouter tous les fichiers du projet
 
 git log : liste les derniers commits qui ont été fait... avec des paramètres comme -n pour préciser le nombre de commits, ou --oneline ; -p pour préciser les fichiers ou dossiers que l'on souhate observer*
 git diff nous montre tous les fichiers modifiés et nous montre les dernières modifs
-
-***************************
+git checkout id_commit: permet de revenir à l'état où le projet était lors de ce commit en lecture seulement
+git checkout id_commit nom_fichier.extention :permet de revenir à l'état d'un fichier particulier au moment du commit considéré
+git resetrevient en arriere et annule tous les commits en amont
 
 
