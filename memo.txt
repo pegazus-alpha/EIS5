@@ -21,6 +21,40 @@ git log : liste les derniers commits qui ont été fait... avec des paramètres 
 git diff nous montre tous les fichiers modifiés et nous montre les dernières modifs
 git checkout id_commit: permet de revenir à l'état où le projet était lors de ce commit en lecture seulement
 git checkout id_commit nom_fichier.extention :permet de revenir à l'état d'un fichier particulier au moment du commit considéré
-git resetrevient en arriere et annule tous les commits en amont
+git reset revient en arriere et annule tous les commits en amont7
+git add . = git add --all et gère aussi les fichiers supprimés
+git reset  --hard supprime les dernières modifs
+git reset id_commit revient en arriere en préservvant l'espace de travail
+git reset HEAD^ revient en arriere une fois  mode --soft(revient en arriere mais maintient stagé les modifications)  , --mixed(revient en arriere et ne stage pas les modifs)
+
+les branches **************************
+git branch nom_branche : v=créer une branche
+git checkout nom_branche : pour migrer vers cette branche là
+
+git merge nom_branche: pour fusionner la dite branche avec la branche principale
+
+git branche -d nom_branche : supprime la branche
+git commit --amend :mofifie le commit précedent 
+git stash:retire les modifications depuis le dernier commit et stocke en mémoire
+git stash list (liste des éléments sauvegardés en mémoire
+git stash apply remets les modifications en place sans viser le stash
+git stash drop: supprime le dernier élément en stash
+git stash save  name : enregistre les modis avec un nom
+git stash show stash@{1}:affiche des précisions sur la modif numero 1
+git stash pop stash@{1}: applique et supprime le stash de la modif numero 1
+git stash branch nom_branch: stasher et appliquer des modifs directement sur une autre branche
+git stash -u pour stasher des modifs de fichiers non traqués
+
+ git remote add origin C:\Users\pourd\Desktop\django1\crepes\folden signaler à notre projet la position du dépot git
+git init --bare : cree un dépot git sans dossier de travail
+git remote -v : liste de tous les remotes dépots
+git remote rename new_name: renommer un dépot
+$ git branch -r: connaitre le nombre de branche dans le dépot 
+git push : envoyer les modifications du projet au dépot
+git push nom_depot  nom_branche
+git push nom_depot --delete nom_branche: supprime une branche dans le dépot
+git pull nom_depot nom_branche :récuperer les nouveaux commits faits sur le dépot et la branche
+git pull nom_depot nom_branche rebase: permet d'ordonner un peu les commits entre utilisateurs sur un dépot
+ git config --global branch.autosetuprebase always: permet de faire git pull rebase automatiquement
 
 
