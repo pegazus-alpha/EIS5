@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <style type="text/css">
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="conteneur">
+        
+        <div class="entete">
+            <table>
+                <td><a href="{% url 'home' %}">Accueil</a></td>
+                <td><a href="{% url 'confection' %}">Confection</a></td>
+                <td><a href="{% url 'liste' %}">Liste</a></td>
+                <td><a href="{% url 'inscription' %}" id="inscription" target="_blank">Inscription</a></td>
+            </table>
+        </div>
+        <div class="milieu">
+            <div class="acceuil">
+                <h1 name="w">Faire un cv n'a jamais été aussi simple</h1>
+                <h2>Essayez Maintenat! : {{ date_c }}</h2>
+                <button id="commencer" href="{% static 'blog/inscription.html' %}">commencer</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <table>
+            <tr>Accueil</tr><br>
+                <tr>Confection</tr><br>
+                <tr>Liste</tr><br>
+                <tr>Inscription</tr><br>
+        </table>  
+        <p>@merci pour la visite</p>
+    </div>
+     {% comment %} <div class="modal" id="modal">
+        <div class="for">
+            <span class="fermer" id="fermer">&times;</span>
+            <form method="post" id="un" action="login">
+                {% csrf_token %}
+                <legend><h1>Inscription</h1></legend>
+                <input type="text" id="nom" placeholder="NOM"/><br/>
+                <input type="text" id="prenom" placeholder="PRENOM:"/><br/>
+                <input type="text" id="num" placeholder="TEL:"/><br/>
+                <input type="text" id="work" placeholder="profession "><br/>
+                <label for="remember">Remember me</label>
+                <input type="checkbox" id="remember" name="remember"/><br/>
+                <input type="submit" id="submit" name="submit" value="submit"/>
+            </form>
+        </div>
+     </div> {% endcomment %}
+    <script type="text/javascript" src="{% static 'blog/js/index.js' %}"></script>
+</body>
+</html>

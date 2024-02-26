@@ -1,0 +1,77 @@
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.for{
+    background-color: rgba(0, 0,0, 0.5);
+    text-align: center;
+    width: 25%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left:37.5%;
+    z-index: index 1999;
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.5);
+}
+input{
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+}
+form{
+    text-align: center;
+    /* padding: 1rem;
+    margin: 1rem; */
+    width: 100%;
+    height: 80% ;
+    position: relative;
+    margin-bottom: 1rem;
+
+}
+input{
+    width: 60%;
+}
+/* input[type="checkbox"]{
+    margin: 0rem;
+} */
+input[type="button"]{
+    width: 40%;
+    text-decoration: none;
+    background-color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[id="nom"]{
+    background-image: url("../images/utilisateur.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+input[id="prenom"]{
+    background-image: url("../images/utilisateur.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+input[id="num"]{
+    background-image: url("../images/whatsapp.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+input[id="work"]{
+    background-image: url("../images/un.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+body{
+    background-color: darkgrey;
+}

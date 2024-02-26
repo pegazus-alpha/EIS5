@@ -1,0 +1,11 @@
+{
+  "name": "eis5",
+  "version": "1.0.0",
+  "description": "application de confection de CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "max",
+  "license": "ISC"
+}

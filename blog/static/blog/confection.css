@@ -1,0 +1,244 @@
+
+body{
+    height: 100%;
+    width: 100%;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+table{
+    position: absolute;
+    right: 0%;
+}
+td{
+    padding: 3rem;
+    margin: 3rem;
+}
+a{
+    text-decoration: none;
+    text-overflow: clip;
+    color:white;
+}
+.cv{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "g d";
+    position : absolute;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    margin-top: 1rem;
+}
+.conteneur{
+    grid-area:m;
+    width: 100%;
+}
+    
+footer{
+    width: 100%;
+    height: 15%;
+}
+.un{
+    padding: 1rem;
+    grid-area: g;
+    background-color: cornflowerblue;
+}
+.deux{
+    padding: 1rem;
+    grid-area: d;
+    background-color: aliceblue;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4fr 1fr;
+    grid-template-areas: 
+    "e"
+    "m"
+    "f";
+}
+
+.entete{
+    grid-area:e;
+    width: 100%;
+    background-color: cadetblue;
+}
+h1{
+    font-size: 1rem;
+}
+img{
+    width: 100%;
+    height: 25%;
+}
+
+.sp,.form{
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+}
+.comp{
+    border-bottom: solid black 2px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+h1[name="a"]{
+    background-image: url("images/nom.png");
+    background-size: 20px;
+    background-position: 10px left;
+    padding-left: 1.5rem;
+    background-repeat: no-repeat;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+}
+h1[name="b"]{
+    background-image: url("images/p.png");
+    background-size: 20px;
+    padding-left: 1.5rem;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+    background-position: 10px left;
+    background-repeat: no-repeat;
+}
+h1[name="c"]{
+    background-image: url("images/tel.png");
+    background-size: 20px;
+    padding-left: 1.5rem;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+    background-position: 10px left;
+    background-repeat: no-repeat;
+}
+h1[name="d"]{
+    background-image: url("images/mail.png");
+    background-size: 20px;
+    padding-left: 1.5rem;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+    background-position: 10px left;
+    background-repeat: no-repeat;
+}
+h1[name="e"]{
+    background-image: url("images/cle.png");
+    background-size: 20px;
+    padding-left: 1.5rem;
+    margin-bottom:1rem;
+    margin-top: 1rem;
+    background-position: 10px left;
+    background-repeat: no-repeat;
+}
+.ident,.form,.parc{
+    margin-bottom:1rem;
+    margin-top: 1rem;
+}
+footer{
+   
+    width: 100%;
+    background-color: black;
+    grid-area: f;
+}
+:hover,a:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0,0, 0.4);
+}
+.fermer{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+}
+.fermer:hover,.fermer:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.for{
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: rgba(0, 0,0, 0.5);
+    text-align: center;
+    width: 25%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left:37.5%;
+    /* z-index: index 1999; */
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.5);
+}
+input{
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+}
+form{
+    text-align: center;
+    /* padding: 1rem;
+    margin: 1rem; */
+    width: 100%;
+    height: 80% ;
+    position: relative;
+    margin-bottom: 1rem;
+
+}
+input{
+    width: 60%;
+}
+/* input[type="checkbox"]{
+    margin: 0rem;
+} */
+input[type="button"]{
+    width: 40%;
+    text-decoration: none;
+    background-color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[id="nom"]{
+    background-image: url("images/utilisateur.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+input[id="prenom"]{
+    background-image: url("images/utilisateur.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+input[id="num"]{
+    background-image: url("images/whatsapp.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+input[id="work"]{
+    background-image: url("images/un.png");
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}

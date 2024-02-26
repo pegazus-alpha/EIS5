@@ -1,0 +1,104 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-02-09 19:55:47
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-02-19 15:09:25
+ * @FilePath: \eis5\confection\confection.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="confection.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="entete">
+        <table>
+            <td><a href="../index.html">Accueil</a></td>
+                <td><a href="../confection/confection.html">Confection</a></td>
+                <td><a href="{% static 'blog/liste.html' %}">Liste</a></td>
+                <td><a id="inscription" target="_blank">Inscription</a></td>
+        </table>
+    </div>
+    <div class="conteneur">
+        
+        <div class="cv">
+            <div class="un">
+            <img src="images/ac.jpg"/>
+            <div name="al"></div>
+            <div class="sp">
+                <h1>SYNTHESE PROFESSIONELLE</h1>
+                <ul>
+                    <li>Aucune</li>
+                </ul>
+                <!-- <div name="al"></div> -->
+            </div>
+            <div class="comp">
+                <h1>COMPETENCES</h1>
+                <ul>
+                    <li>Programmation d'applications mobiles Flutter, android studio</li>
+                    <li>programmatopn web backend javascript,php,python</li>
+                </ul>
+            </div>
+            <div class="int">
+                <h1>CENTRES D'INTERET</h1>
+                <ul>
+                    <li>musique</li>
+                    <li>sport(combat)</li>
+                    <li>lecture, cukture</li>
+                </ul>
+            </div>
+            </div>
+            <div class="deux">
+                <div class="ident">
+                    <h1 name="a">NOM : BITE MENERE MAXIME MARIAN</h1>
+                    <h1 name="b">profession : Eudiant à mis temps</h1>
+                    <h1 name="c">Tel : 656994353</h3>
+                    <h1 name="d">Email : maximebite2@gmail.com</h3>
+                    <h1 name="e">Adresse : Nyalla satan city</h3>
+                    <!-- <div name="al"></div> -->
+                </div>
+                <div class="form">
+                    <h1>Formation</h1>
+                    <ul>
+                        <li>Informatiqur générale: UD</li>
+                        <li>Le reste: youtube, opeclassroom, w3school etc...</li>
+                    </ul>
+                    <!-- <div name="al"></div> -->
+                </div>
+                <div class="parc">
+                    <h1>PARCOURS PROFESSIONEL</h1>
+                    <ul>
+                        <li>
+                            Vide pour le moment
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+
+    </footer> -->
+    <div class="modal" id="modal">
+        <div class="for">
+            <span class="fermer" id="fermer">&times;</span>
+            <form method="post" id="un">
+                <legend><h1>Inscription</h1></legend>
+                <input type="text" id="nom" placeholder="NOM"/><br/>
+                <input type="text" id="prenom" placeholder="PRENOM:"/><br/>
+                <input type="text" id="num" placeholder="TEL:"/><br/>
+                <input type="text" id="work" placeholder="profession "><br/>
+                <label for="remember">Remember me</label>
+                <input type="checkbox" id="remember" name="remember"/><br/>
+                <input type="button" id="submit" name="submit" value="submit"/>
+            </form>
+        </div>
+     </div>
+    <script type="text/javascript" src="confection.js"></script>
+</body>
+</html>
